@@ -28,9 +28,11 @@ class App extends Component {
       })
     })
   }
-  handleTrackedState(){
-    console.log("changing track state")
+  handleTrackedState(newStock){
+    let tempArray = this.state.stocks
+    tempArray.push(newStock)
     this.setState({
+      stocks: tempArray,
       hasTracked: true
     })
   }

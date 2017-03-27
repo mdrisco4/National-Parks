@@ -44,7 +44,7 @@ class Search extends Component {
       },
       dataType: "json"
     }).then((response) => {
-      this.props.handleTrackedState()
+      this.props.handleTrackedState(response)
     })
   }
 
