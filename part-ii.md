@@ -26,10 +26,10 @@ When the user clicks on a stock's "Track Stock" button, the following should hap
 
 > [It should look something like this](#).
 
-### 3. Stock ('/stocks/:symbol')
+### 3. Stock (`/stocks/:symbol`)
 
 The stock information beyond name and symbol (e.g., `Current Price`, `Change`) should no longer be pulled from hard-coded data. Instead, this information should be pulled from the [Markit on Demand API](http://dev.markitondemand.com/MODApis/).
 
-When this view loads, a call will be made to the [Markit on Demand API](#) that returns a JSON representation of the stock in question.
+When this view loads, a call will be made to the [Markit on Demand API](http://dev.markitondemand.com/MODApis/) that returns a JSON representation of the stock in question.
 
 If the API call is successful, that stock's information should be displayed on the page.
