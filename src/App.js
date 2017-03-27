@@ -35,8 +35,8 @@ class App extends Component {
 
           <div className="main">
             <Route exact path="/" render={() => <Dashboard stocks={this.state.stocks} />} />
-            <Route path="/about" component={About} />
-            <Route path="/stocks/:symbol" component={Stock} />
+            <Route path="/about" render={() => <About />} />
+            <Route path="/stocks/:symbol" render={() => <Stock />} />
           </div>
         </div>
       </Router>
