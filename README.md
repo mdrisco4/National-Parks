@@ -21,3 +21,10 @@ If you want to see what a finished version of Part II might look like, first mak
 $ git checkout solution-routing-apis
 $ npm start
 ```
+
+## Resources
+
+- [React Router Lesson Plan](https://github.com/ga-wdi-lessons/react-router)
+- [Passing state through `<Link>`](https://reacttraining.com/react-router/web/api/Link/to-object)
+- [<Route render={ ... } />](https://reacttraining.com/react-router/web/api/Route/render-func) vs. [<Route component={ ... } />](https://reacttraining.com/react-router/web/api/Route/component)
+- [NPM: jQuery](https://www.npmjs.com/package/jquery)
