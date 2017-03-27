@@ -18,9 +18,11 @@ If a user visits `/search` or clicks on "Search" in the navigation bar, they sho
 
 If a user submits a stock symbol (e.g., `AAPL`) through the form, a call will be made to the [Markit on Demand API](http://dev.markitondemand.com/MODApis/) that returns a JSON representation of the searched stock.
 
-> **Important Note:** The Markit on Demand API, unfortunately, does not have CORS enabled. That means when making an API call to it from our app, we need to request `jsonp` as the data type. Axios does not support `jsonp`, so an alternative approach is...
+> **Important Note:** The Markit on Demand API, unfortunately, does not have CORS enabled. That means when making an API call to it from our app, we need to request `jsonp` as the data type. Axios does not support `jsonp`.
 >
-> Import jQuery and use AJAX. [Take a look at this snippet](https://github.com/ga-wdi-exercises/react-omdb/commit/70c28576d35e93331d37a425e45b73127f0713b3#diff-a2c44f5da6f2e8575db9456a7e28d50c) to see how we go about importing and using it.
+> An alternative approach is to import jQuery and use AJAX. [Take a look at this snippet](https://github.com/ga-wdi-exercises/react-omdb/commit/70c28576d35e93331d37a425e45b73127f0713b3#diff-a2c44f5da6f2e8575db9456a7e28d50c) to see how we go about importing and using it.
+>
+> When using `$.ajax`, make sure to specify `jsonp` as the `dataType`
 
 If the API call is successful, the app should display the name and symbol of that stock below the search form. To the right of this information, there should be a "Track Stock" button.
 
