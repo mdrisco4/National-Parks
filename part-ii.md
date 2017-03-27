@@ -1,4 +1,4 @@
-## Part II: Adding APIs
+# Part II: Adding APIs
 
 In this portion of the lab, your stock tracking app will be communicating with two APIs...
   1. [Markit on Demand](http://dev.markitondemand.com/MODApis/). This will be used to retrieve the latest information about a particular stock.
@@ -8,11 +8,11 @@ In this portion of the lab, your stock tracking app will be communicating with t
 
 This version of the stock tracking app should see the following additional functionalities...
 
-### 1. Dashboard (`/`)
+## 1. Dashboard (`/`)
 
 Instead of listing the hard-coded stocks, this page should retrieve all stocks from the local API (i.e., `localhost:3000/stocks`) and display them on the page.
 
-### 2. Search (`/search`)
+## 2. Search (`/search`)
 
 If a user visits `/search` or clicks on "Search" in the navigation bar, they should be directed to a search page with a single-input form.
 
@@ -28,7 +28,7 @@ When the user clicks on a stock's "Track Stock" button, the following should hap
 - A `POST` request is made to the local Rails API. If successful, it will add the newly-tracked stock to the database.
 - The user is redirected to the dashboard view. The tracked stock should now be visible
 
-### 3. Stock (`/stocks/:symbol`)
+## 3. Stock (`/stocks/:symbol`)
 
 The stock information beyond name and symbol (e.g., `Current Price`, `Change`) should no longer be pulled from hard-coded data. Instead, this information should be pulled from the [Markit on Demand API](http://dev.markitondemand.com/MODApis/).
 
