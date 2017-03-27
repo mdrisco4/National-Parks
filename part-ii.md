@@ -35,3 +35,5 @@ The stock information beyond name and symbol (e.g., `Current Price`, `Change`) s
 When this view loads, a call will be made to the [Markit on Demand API](http://dev.markitondemand.com/MODApis/) that returns a JSON representation of the stock in question.
 
 If the API call is successful, that stock's information should be displayed on the page.
+
+> [It should look something like this](#).
