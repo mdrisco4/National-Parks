@@ -51,7 +51,7 @@ class App extends Component {
             <Route exact path="/" render={() => <Dashboard stocks={this.state.stocks} />} />
             <Route path="/search" render={() => {
               if(this.state.hasTracked){
-                return <Redirect to="/stocks" />
+                return <Redirect to="/" />
               }
               return <Search handleTrackedState={this.handleTrackedState} />
             }} />
