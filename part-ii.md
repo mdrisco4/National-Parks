@@ -1,4 +1,4 @@
-## Part II: [Adding APIs](part-ii.md)
+## Part II: Adding APIs
 
 In this portion of the lab, your stock tracking app will be communicating with two APIs...
   1. [Markit on Demand](http://dev.markitondemand.com/MODApis/). This will be used to retrieve the latest information about a particular stock.

@@ -1,4 +1,4 @@
-## Part I: [React Router](part-i.md)
+## Part I: React Router
 
 This version of the application should use hard-coded stocks data, which you can find in [`/data/stock-data.json`](#).
 
