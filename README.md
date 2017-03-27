@@ -18,6 +18,6 @@ $ npm start
 If you want to see what a finished version of Part II might look like, first make sure to [clone down and run the Rails API](https://github.com/ga-wdi-exercises/react-router-lab-api). Then...
 
 ```bash
-$ git checkout solution-routing-only
+$ git checkout solution-routing-apis
 $ npm start
 ```
