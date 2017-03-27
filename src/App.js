@@ -47,15 +47,14 @@ class App extends Component {
 
           <div className="main">
             <Route exact path="/" render={() => <Dashboard stocks={this.state.stocks} />} />
-            <Route path="/stocks" render={() => <Dashboard stocks={this.state.stocks} />} />
             <Route path="/search" render={() => {
               if(this.state.hasTracked){
                 return <Redirect to="/stocks" />
               }
               return <Search handleTrackedState={this.handleTrackedState} />
             }} />
-            <Route path="/about" render={() => <About />} />
-            <Route path="/stocks/:symbol" render={() => <Stock />} />
+          <Route path="/about" component={About} />
+          <Route path="/stocks/:symbol" component={Stock} />
           </div>
         </div>
       </Router>
