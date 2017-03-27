@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Stock extends Component {
   constructor(props){
     super(props)
+    console.log(props)
     this.state = {
       stock: this.props.location.state.selectedStock
     }
