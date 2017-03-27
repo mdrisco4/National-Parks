@@ -4,6 +4,8 @@ In this portion of the lab, your stock tracking app will be communicating with t
   1. [Markit on Demand](http://dev.markitondemand.com/MODApis/). This will be used to retrieve the latest information about a particular stock.
   2. A local Rails API. This will be used store stocks the user wants to track.
 
+**[Before you continue, make sure to clone down and run the Rails API.](https://github.com/ga-wdi-exercises/react-router-lab-api)**
+
 This version of the stock tracking app should see the following additional functionalities...
 
 ### 1. Dashboard (`/`)
