@@ -26,5 +26,5 @@ $ npm start
 
 - [React Router Lesson Plan](https://github.com/ga-wdi-lessons/react-router)
 - [Passing state through `<Link>`](https://reacttraining.com/react-router/web/api/Link/to-object)
-- [<Route render={ ... } />](https://reacttraining.com/react-router/web/api/Route/render-func) vs. [<Route component={ ... } />](https://reacttraining.com/react-router/web/api/Route/component)
+- [`<Route render={ ... } />`](https://reacttraining.com/react-router/web/api/Route/render-func) vs [`<Route component={ ... } />`](https://reacttraining.com/react-router/web/api/Route/component)
 - [NPM: jQuery](https://www.npmjs.com/package/jquery)
