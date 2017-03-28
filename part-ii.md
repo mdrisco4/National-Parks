@@ -14,6 +14,8 @@ Instead of listing the hard-coded stocks, this page should retrieve all stocks f
 
 ## 2. Search (`/search`)
 
+#### Search for a Stock
+
 If a user visits `/search` or clicks on "Search" in the navigation bar, they should be directed to a search page with a single-input form.
 
 If a user submits a stock symbol (e.g., `AAPL`) through the form, a call will be made to the [Markit on Demand API](http://dev.markitondemand.com/MODApis/) that returns a JSON representation of the searched stock.
@@ -25,6 +27,8 @@ If a user submits a stock symbol (e.g., `AAPL`) through the form, a call will be
 > When using `$.ajax`, make sure to specify `jsonp` as the `dataType`
 
 If the API call is successful, the app should display the name and symbol of that stock below the search form. To the right of this information, there should be a "Track Stock" button.
+
+#### Track a Stock
 
 When the user clicks on a stock's "Track Stock" button, the following should happen...
 - A `POST` request is made to the local Rails API. If successful, it will add the newly-tracked stock to the database.
