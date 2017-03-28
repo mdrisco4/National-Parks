@@ -25,9 +25,7 @@ class Search extends Component {
       method: "GET",
       dataType: "jsonp"
     }).then((response) => {
-      this.setState({ searchedStock: response }, () => {
-        console.log("searched stock", this.state.searchedStock)
-      })
+      this.setState({ searchedStock: response })
     })
   }
 

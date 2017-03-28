@@ -4,7 +4,6 @@ import $ from "jquery"
 class Stock extends Component {
   constructor(props){
     super(props)
-    console.log(props)
     this.state = {
       selectedStock: this.props.location.state.selectedStock,
       apiStock: {}
@@ -18,9 +17,7 @@ class Stock extends Component {
       method: "GET",
       dataType: "jsonp"
     }).then((response) => {
-      this.setState({ apiStock: response }, () => {
-        console.log("api stock", this.state.apiStock)
-      })
+      this.setState({ apiStock: response })
     })
   }
 
