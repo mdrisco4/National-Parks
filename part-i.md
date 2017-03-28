@@ -1,6 +1,6 @@
 # Part I: React Router
 
-This version of the application should use hard-coded stocks data, which you can find in [`/data/stock-data.json`](#).
+This version of the application should use hard-coded stocks data, which you can find in [`/data/stock-data.json`](/data/stock-data.json).
 
 Your stock tracking app should have the following features...
 
