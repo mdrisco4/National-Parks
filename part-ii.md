@@ -14,6 +14,10 @@ Instead of listing the hard-coded stocks, this page should retrieve all stocks f
 
 ## 2. Search (`/search`)
 
+#### Update Navigation
+
+Add a "Search" link to the navigation bar.
+
 #### Search for a Stock
 
 If a user visits `/search` or clicks on "Search" in the navigation bar, they should be directed to a search page with a single-input form.

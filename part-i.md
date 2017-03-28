@@ -16,6 +16,8 @@ If a user visits `/` or clicks "Home" in the navigation bar, they should be dire
 
 If a user clicks on one of the stocks listed in the dashboard view, they should be directed to an individual stock show view. This view should display all of a stock's attributes.
 
+> The resources listed at the bottom of the [readme](README.md) might come in handy when building this out.
+
 ## 4. About (`/about`)
 
 If a user clicks on "About" in the navigation bar, they should be directed to an about page. This is just a static page that displays a description of your app.

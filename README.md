@@ -4,6 +4,8 @@ For today's lab you will be building a stock tracking app. The lab will be broke
   1. Build a React app that uses `react-router`
   2. Communicate with 3rd-party and local APIs
 
+> **NOTE:** This app runs on Port 3001. This is configured inside [`package.json`](package.json)
+
 ## Part I: [React Router](part-i.md)
 
 If you want to see what a finished version of Part I might look like...
