@@ -1,4 +1,4 @@
-You are welcome to use the following as starter HTML templates for your components...
+You are welcome to use the following as starter HTML templates and styles for your components...
 
 #### Navigation
 
@@ -11,6 +11,33 @@ You are welcome to use the following as starter HTML templates for your componen
 </div>
 ```
 
+```css
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding: 0 20px;
+  background: #6532CB;
+}
+
+.nav > * {
+  padding-right: 20px;
+}
+
+.nav .nav-logo {
+  color: #99CC00;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+```
+
 #### Dashboard
 
 ```html
@@ -20,6 +47,13 @@ You are welcome to use the following as starter HTML templates for your componen
     <li>This is a stock.</li>
   </ul>
 </div>
+```
+
+```css
+.stocks a {
+  color: #99CC00;
+  font-weight: bold;
+}
 ```
 
 #### Stock
@@ -43,10 +77,27 @@ You are welcome to use the following as starter HTML templates for your componen
   <h2>Search</h2>
   <form>
     <input type="text" />
-    <input type="submit" value="Search" />
+    <input type="submit" className="search-btn" value="Search" />
   </form>
   <div className="search-results">
     Search result(s) goes here.
   </div>
 </div>
+```
+
+```css
+.search-results {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.search-btn {
+  margin: 0 10px;
+  border: 0;
+  border-radius: 5px;
+  background: #6532CB;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
 ```
