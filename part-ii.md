@@ -1,14 +1,14 @@
 # Part II: Adding APIs
 
 In this portion of the lab, your stock tracking app will be communicating with two APIs...
-  1. [A local Rails API](https://github.com/ga-wdi-exercises/react-router-lab-api). This will be used store stocks the user wants to track.
+  1. [A local Rails API](https://git.generalassemb.ly/ga-wdi-exercises/react-router-lab-api). This will be used store stocks the user wants to track.
   1. Either [Markit on Demand](http://dev.markitondemand.com/MODApis/) which is deprecated but has functional query routes, or the robust [AlphaVantage API](https://www.alphavantage.co/). One of these can be used to retrieve the latest information about a particular stock.
 
 Markit On Demand, though deprecated, is a potentially little easier to deal with due to the simplicity of its responses. Its responses are in `jsonp` format and you must use jQuery since Axios doesn't support `jsonp`.
 
 Alpha Vantage has more detailed information included in its responses, which contain nested objects. It also requires a relatively painless and fast sign-up for an API key. If you go this route, you can use Axios.
 
-**[Before you continue, make sure to clone down and run the Rails API.](https://github.com/ga-wdi-exercises/react-router-lab-api)**
+**[Before you continue, make sure to clone down and run the Rails API.](https://git.generalassemb.ly/ga-wdi-exercises/react-router-lab-api)**
 
 This version of the stock tracking app should see the following additional functionalities...
 

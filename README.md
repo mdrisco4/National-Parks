@@ -17,7 +17,7 @@ $ npm run start
 
 ## Part II: [Adding APIs](part-ii.md)
 
-If you want to see what a finished version of Part II might look like, first make sure to [clone down and run the Rails API](https://github.com/ga-wdi-exercises/react-router-lab-api). Then...
+If you want to see what a finished version of Part II might look like, first make sure to [clone down and run the Rails API](https://git.generalassemb.ly/ga-wdi-exercises/react-router-lab-api). Then...
 
 ```bash
 $ git checkout solution-routing-apis
