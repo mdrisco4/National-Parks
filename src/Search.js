@@ -29,7 +29,7 @@ class Search extends Component {
     })
   }
 
-  handleTrackStock(e){
+  onTrackStock(e){
     let url = "http://localhost:3000/stocks"
     $.ajax({
       url,
@@ -42,7 +42,7 @@ class Search extends Component {
       },
       dataType: "json"
     }).then((response) => {
-      this.props.handleTrackedState(response)
+      this.props.handleTrackStock(response)
     })
   }
 
@@ -50,7 +50,7 @@ class Search extends Component {
     let searchResult = this.state.searchedStock.Name
                           ? (<div className="search-results-item">
                               {this.state.searchedStock.Name} ({this.state.searchedStock.Symbol})
-                              <button onClick={ (e) => this.handleTrackStock(e) } className="search-btn">Track Stock</button>
+                              <button onClick={ (e) => this.onTrackStock(e) } className="search-btn">Track Stock</button>
                             </div>)
                           : null
     return (

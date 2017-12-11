@@ -5,13 +5,13 @@ class Stock extends Component {
   constructor(props){
     super(props)
     this.state = {
-      selectedStock: this.props.location.state.selectedStock,
+      selectedStock: this.props.match.params.symbol,
       apiStock: {}
     }
   }
 
   componentDidMount(){
-    let url = "http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=" + this.state.selectedStock.symbol
+    let url = "http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=" + this.state.selectedStock
     $.ajax({
       url,
       method: "GET",
