@@ -12,7 +12,7 @@ Alpha Vantage has more detailed information included in its responses, which con
 
 This version of the stock tracking app should see the following additional functionalities...
 
-## 1. Dashboard (`/`)
+## 1. Dashboard (`/stocks`)
 
 Instead of listing the hard-coded stocks, this page should retrieve all stocks from the local Rails API (i.e., `localhost:3000/stocks`) and display them on the page.
 
@@ -38,7 +38,7 @@ Use the following base URL for making requests to the deprecated Markit On Deman
 >
 > When using `$.ajax`, make sure to specify `jsonp` as the `dataType`
 
-##### Alhpa Vantage
+##### Alpha Vantage
 
 [Alpha Vantage Docs](https://www.alphavantage.co/documentation/)
 
@@ -76,7 +76,7 @@ You may use Axios to interact with this API. Its responses contain nested object
 
 There is a very new Object method in Javascript that can be very useful when dealing with responses like this, `Object.values()`. It can extract all of the values in an object and place them into an array. See [documentation here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values); it's an 'experimental' feature and isn't supported in IE at all.
 
-See also [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). 
+See also [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
 
 #### Track a Stock

@@ -12,7 +12,7 @@ If you want to see what a finished version of Part I might look like...
 
 ```bash
 $ git checkout solution-routing-only
-$ npm start
+$ npm run start
 ```
 
 ## Part II: [Adding APIs](part-ii.md)
@@ -21,12 +21,11 @@ If you want to see what a finished version of Part II might look like, first mak
 
 ```bash
 $ git checkout solution-routing-apis
-$ npm start
+$ npm run start
 ```
 
 ## Resources
 
-- [React Router Lesson Plan](https://github.com/ga-wdi-lessons/react-router)
-- [Passing state through `<Link>`](https://reacttraining.com/react-router/web/api/Link/to-object)
+- [React Router Lesson Plan](https://git.generalassemb.ly/ga-wdi-lessons/react-router)
 - [`<Route render={ ... } />`](https://reacttraining.com/react-router/web/api/Route/render-func) vs [`<Route component={ ... } />`](https://reacttraining.com/react-router/web/api/Route/component)
 - [NPM: jQuery](https://www.npmjs.com/package/jquery)
