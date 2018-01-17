@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import $ from "jquery"
+import $ from 'jquery'
 
 class Stock extends Component {
-  constructor(props){
+  constructor (props) {
     super(props)
     this.state = {
       selectedStock: this.props.match.params.symbol,
@@ -10,18 +10,18 @@ class Stock extends Component {
     }
   }
 
-  componentDidMount(){
-    let url = "http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=" + this.state.selectedStock
+  componentDidMount () {
+    let url = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=' + this.state.selectedStock
     $.ajax({
       url,
-      method: "GET",
-      dataType: "jsonp"
+      method: 'GET',
+      dataType: 'jsonp'
     }).then((response) => {
       this.setState({ apiStock: response })
     })
   }
 
-  render() {
+  render () {
     return (
       <div>
         <h2>{this.state.apiStock.Name} ({this.state.apiStock.Symbol})</h2>
@@ -32,8 +32,8 @@ class Stock extends Component {
           <li>Low: {this.state.apiStock.Low}</li>
         </ul>
       </div>
-    );
+    )
   }
 }
 
-export default Stock;
+export default Stock
