@@ -1,22 +1,31 @@
 # Part II: Adding APIs
 
 In this portion of the lab, your stock tracking app will be communicating with two APIs...
-  1. [A local Rails API](https://git.generalassemb.ly/ga-wdi-exercises/react-router-lab-api). This will be used store stocks the user wants to track.
+  1. [GA Stocks API](https://ga-stocks.herokuapp.com/stocks). This will be used store stocks the user wants to track.
   1. Either [Markit on Demand](http://dev.markitondemand.com/MODApis/) which is deprecated but has functional query routes, or the robust [AlphaVantage API](https://www.alphavantage.co/). One of these can be used to retrieve the latest information about a particular stock.
 
 Markit On Demand, though deprecated, is a potentially little easier to deal with due to the simplicity of its responses. Its responses are in `jsonp` format and you must use jQuery since Axios doesn't support `jsonp`.
 
 Alpha Vantage has more detailed information included in its responses, which contain nested objects. It also requires a relatively painless and fast sign-up for an API key. If you go this route, you can use Axios.
 
-**[Before you continue, make sure to clone down and run the Rails API.](https://git.generalassemb.ly/ga-wdi-exercises/react-router-lab-api)**
-
 This version of the stock tracking app should see the following additional functionalities...
 
 ## 1. Dashboard (`/stocks`)
 
-Instead of listing the hard-coded stocks, this page should retrieve all stocks from the local Rails API (i.e., `localhost:3000/stocks`) and display them on the page.
+Instead of listing the hard-coded stocks, this page should retrieve all stocks from the local Rails API (i.e., `https://ga-stocks.herokuapp.com/stocks`) and display them on the page.
 
-## 2. Search (`/search`)
+
+## 2. Stock (`/stocks/:symbol`)
+
+The stock information beyond name and symbol (e.g., `Current Price`, `Change`) should no longer be pulled from hard-coded data. Instead, this information should be pulled from the [Markit on Demand API](http://dev.markitondemand.com/MODApis/).
+
+When this view loads, a call will be made to the [Markit on Demand API](http://dev.markitondemand.com/MODApis/) that returns a JSON representation of the stock in question.
+
+> Please reference the earlier note about the Markit on Demand API and `jsonp`
+
+If the API call is successful, that stock's information should be displayed on the page.
+
+## Bonus: Search (`/search`)
 
 #### Update Navigation
 
@@ -82,15 +91,5 @@ See also [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 #### Track a Stock
 
 When the user clicks on a stock's "Track Stock" button, the following should happen...
-- A `POST` request is made to the local Rails API. If successful, it will add the newly-tracked stock to the database.
+- A `POST` request is made to the GA API. If successful, it will add the newly-tracked stock to the database.
 - The user is redirected to the dashboard view. The tracked stock should now be visible
-
-## 3. Stock (`/stocks/:symbol`)
-
-The stock information beyond name and symbol (e.g., `Current Price`, `Change`) should no longer be pulled from hard-coded data. Instead, this information should be pulled from the [Markit on Demand API](http://dev.markitondemand.com/MODApis/).
-
-When this view loads, a call will be made to the [Markit on Demand API](http://dev.markitondemand.com/MODApis/) that returns a JSON representation of the stock in question.
-
-> Please reference the earlier note about the Markit on Demand API and `jsonp`
-
-If the API call is successful, that stock's information should be displayed on the page.
