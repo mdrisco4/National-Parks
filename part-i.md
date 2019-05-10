@@ -1,7 +1,7 @@
 # Part I: React Router
 
 This version of the application should use hard-coded stocks data, which you can
-find in [`/data/stock-data.json`](/data/stock-data.json). Pass this data into
+find in [`/data/stock-data.json`](https://git.generalassemb.ly/dc-wdi-react-redux/react-router-lab/blob/master/src/data/stock-data.json). Pass this data into
 the `<App />` component from inside `index.js` (i.e. follow [Thinking in
 React](https://reactjs.org/docs/thinking-in-react.html))
 
