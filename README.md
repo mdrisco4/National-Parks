@@ -2,17 +2,18 @@
 
 # React Router & APIs
 
-For today's lab you will be building a stock tracking app. The lab will be broken down into two parts:
+For today's lab you will be building a stock tracking app. The lab will be
+broken down into two parts:
 
 1. Build a React app that uses `react-router`
 1. Communicate with 3rd-party APIs
 
 ## Prerequisites
 
-* React
-* Components and life cycle methods
-* Props and state
-* React Router
+- React
+- Components and life cycle methods
+- Props and state
+- React Router
 
 ## Instructions
 
@@ -31,12 +32,16 @@ Please turn in your submission by the deadline on your cohort calendar.
 
 ## Resources
 
-* [React Router Lesson Plan](https://git.generalassemb.ly/ga-wdi-lessons/react-router)
-* [`<Route render={ ... } />`](https://reacttraining.com/react-router/web/api/Route/render-func) vs [`<Route component={ ... } />`](https://reacttraining.com/react-router/web/api/Route/component)
+- [React Router Lesson Plan](https://git.generalassemb.ly/ga-wdi-lessons/react-router)
+- [`<Route render={ ... } />`](https://reacttraining.com/react-router/web/api/Route/render-func)
+  vs
+  [`<Route component={ ... } />`](https://reacttraining.com/react-router/web/api/Route/component)
 
 ## Plagiarism
 
-Take a moment to refamiliarize yourself with the [Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md). Plagiarized work will not be accepted.
+Take a moment to refamiliarize yourself with the
+[Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md).
+Plagiarized work will not be accepted.
 
 ## [License](LICENSE)
 
