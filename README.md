@@ -10,10 +10,10 @@ broken down into two parts:
 
 ## Prerequisites
 
-* React
-* Components and life cycle methods
-* Props and state
-* React Router
+- React
+- Components and life cycle methods
+- Props and state
+- React Router
 
 ## Instructions
 
@@ -34,18 +34,18 @@ You will be building out a website listing all of the National Parks.
 
 Start by building out the app using React, React Router, and the static data
 provided in [`data/parks.json`](./data/parks.json). Get the site working with
-this static data, then integrate with the [National Parks
-API](https://www.nps.gov/subjects/developer/index.htm) and make it look like the
-mock. For now, just pass the data around and create an MVP version with minimal
-styling so you know it's working.
+this static data, then integrate with the
+[National Parks API](https://www.nps.gov/subjects/developer/index.htm) and make
+it look like the mock. For now, just pass the data around and create an MVP
+version with minimal styling so you know it's working.
 
 Your root level component (`App`) should hold all the data for the application
 and pass it down to the different pages, as necessary.
 
 ### Part II: [Adding APIs](part-ii.md)
 
-Once you have it working with the static data, get it working with the [National
-Parks API](https://www.nps.gov/subjects/developer/index.htm).
+Once you have it working with the static data, get it working with the
+[National Parks API](https://www.nps.gov/subjects/developer/index.htm).
 
 You should only need to add an AJAX request that sets the API response data to
 state.
@@ -57,13 +57,15 @@ provided mock.
 
 ## Resources
 
-* [React Router Lesson Plan](https://git.generalassemb.ly/ga-wdi-lessons/react-router)
-* [`<Route render={ ... } />`](https://reacttraining.com/react-router/web/api/Route/render-func) vs [`<Route component={ ... } />`](https://reacttraining.com/react-router/web/api/Route/component)
+- [React Router Lesson Plan](https://git.generalassemb.ly/ga-wdi-lessons/react-router)
+- [`<Route render={ ... } />`](https://reacttraining.com/react-router/web/api/Route/render-func)
+  vs
+  [`<Route component={ ... } />`](https://reacttraining.com/react-router/web/api/Route/component)
 
 ## Plagiarism
 
-Take a moment to refamiliarize yourself with the [Plagiarism
-policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md).
+Take a moment to refamiliarize yourself with the
+[Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md).
 Plagiarized work will not be accepted.
 
 ## [License](LICENSE)

@@ -1,9 +1,9 @@
 # Part I: React Router
 
 This version of the application should use hard-coded parks data, which you can
-find in [`/data/parks.json`](/data/parks.json). Pass this data into the `<App
-/>` component from inside `index.js` (i.e. follow [Thinking in
-React](https://reactjs.org/docs/thinking-in-react.html))
+find in [`/data/parks.json`](/data/parks.json). Pass this data into the
+`<App />` component from inside `index.js` (i.e. follow
+[Thinking in React](https://reactjs.org/docs/thinking-in-react.html))
 
 Your stock tracking app should have the following features:
 
