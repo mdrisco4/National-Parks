@@ -2,7 +2,8 @@
 
 # React Router & APIs
 
-For today's lab you will be building a stock tracking app. The lab will be broken down into two parts:
+For today's lab you will be building a stock tracking app. The lab will be
+broken down into two parts:
 
 1. Build a React app that uses `react-router`
 1. Communicate with 3rd-party APIs
@@ -25,9 +26,34 @@ Please turn in your submission by the deadline on your cohort calendar.
 
 ## Requirements
 
+You will be building out a website listing all of the National Parks.
+
+[Click here for the Adobe XD mock](https://drive.google.com/file/d/1DJS8ysB1N9Kp89_V_loagQiFNU_4jZoN/view?usp=sharing)
+
 ### Part I: [React Router](part-i.md)
 
+Start by building out the app using React, React Router, and the static data
+provided in [`data/parks.json`](./data/parks.json). Get the site working with
+this static data, then integrate with the [National Parks
+API](https://www.nps.gov/subjects/developer/index.htm) and make it look like the
+mock. For now, just pass the data around and create an MVP version with minimal
+styling so you know it's working.
+
+Your root level component (`App`) should hold all the data for the application
+and pass it down to the different pages, as necessary.
+
 ### Part II: [Adding APIs](part-ii.md)
+
+Once you have it working with the static data, get it working with the [National
+Parks API](https://www.nps.gov/subjects/developer/index.htm).
+
+You should only need to add an AJAX request that sets the API response data to
+state.
+
+### Part III [Make it look like the mock](https://drive.google.com/file/d/1DJS8ysB1N9Kp89_V_loagQiFNU_4jZoN/view?usp=sharing)
+
+Now that all your data and pages are in place, make your site look like the
+provided mock.
 
 ## Resources
 
@@ -36,7 +62,9 @@ Please turn in your submission by the deadline on your cohort calendar.
 
 ## Plagiarism
 
-Take a moment to refamiliarize yourself with the [Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md). Plagiarized work will not be accepted.
+Take a moment to refamiliarize yourself with the [Plagiarism
+policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md).
+Plagiarized work will not be accepted.
 
 ## [License](LICENSE)
 

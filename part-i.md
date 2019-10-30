@@ -1,8 +1,8 @@
 # Part I: React Router
 
-This version of the application should use hard-coded stocks data, which you can
-find in [`/data/stock-data.json`](/data/stock-data.json). Pass this data into
-the `<App />` component from inside `index.js` (i.e. follow [Thinking in
+This version of the application should use hard-coded parks data, which you can
+find in [`/data/parks.json`](/data/parks.json). Pass this data into the `<App
+/>` component from inside `index.js` (i.e. follow [Thinking in
 React](https://reactjs.org/docs/thinking-in-react.html))
 
 Your stock tracking app should have the following features:
@@ -13,23 +13,18 @@ No matter what route the user is visiting, they should always see a navigation
 bar at the top of the window. It should contain links to "Home" and "About"
 pages.
 
-## 2. Dashboard (`/stocks`)
+## 2. Park List (`/`)
 
-If a user visits `/stocks` or clicks "Home" in the navigation bar, they should
-be directed to a dashboard page. This page should list all of the stocks that
-the user is tracking, specifically their `name` and `symbol`. These stocks
-should be pulled from [`/data/stock-data.json`](/data/stock-data.json).
+If the user visits your application's home page (i.e. `localhost:3000`), they
+should see the list of parks. The images and names for these links should be
+pulled from [`/data/parks.json`](./data/parks.json).
 
-## 3. Stock (`/stocks/:symbol`)
+## 3. Park Detail (`/park/:id`)
 
-If a user clicks on one of the stocks listed in the Dashboard view, they should
-be directed to an individual stock show view. This view should display all of
-a stock's attributes.
+Every object in the `parks.json` data has an `id` property which uniquely
+identifies each object. We want to use this in the url so we can link to
+individual parks. If a user visits a url that follows the `park/:id` pattern,
+find the object with that id from the parks data and render that to the user.
 
 > The resources listed at the bottom of the [readme](README.md) might come in
 > handy when building this out.
-
-## 4. About (`/about`)
-
-If a user clicks on "About" in the navigation bar, they should be directed to an
-about page. This is just a static page that displays a description of your app.

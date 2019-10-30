@@ -1,26 +1,28 @@
 # Part II: Adding APIs
 
-In this portion of the lab, your stock tracking app will be communicating with
-two APIs:
+For this portion of the lab, your national parks app will be communicating with
+the [National Parks API](https://www.nps.gov/subjects/developer/index.htm).
 
-1. [GA Stocks API](https://ga-stocks.herokuapp.com/stocks). This will be used
-   store stocks the user wants to track.
-1. [IEX Trading](https://iextrading.com/developer/docs/)
+First, you'll need to register for an API key with the National Parks API. Once
+you have your key, review the documentation for the `/parks` endpoint. You'll
+need to figure out how to make a request to get a list of parks with at least
+the following properties:
 
-Start with the GA Stocks API. Once you have that working, move on to IEX
-Trading.
+1. `addresses`
+1. `contacts`
+1. `description`
+1. `designation`
+1. `name`
+1. `url`
+1. `parkCode`
+1. `images`
 
-## 1. Dashboard (`/stocks`)
+> Note: The API is using something called Pagination, which means that every request returns 50 parks, of the almost 500 total parks. You just need to get the first set of 50.
 
-Instead of listing the hard-coded stocks, this page should retrieve all stocks
-from the API (i.e., `https://ga-stocks.herokuapp.com/stocks`) and display them
-on the page.
+## App
 
-## 2. Stock (`/stocks/:symbol`)
-
-The stock information beyond name and symbol (e.g., `Current Price`, `Change`)
-should no longer be pulled from hard-coded data. Instead, this information
-should be pulled from [IEX Trading](https://iextrading.com/developer/docs/).
+Instead of listing the hard-coded parks from the `parks.json` file, this page
+should retrieve all stocks from the API  and display them on the page.
 
 ## Bonus: Axios
 
@@ -35,39 +37,7 @@ You can easily build and deploy React apps using `create-react-app` and
 with `npm build`. Then, follow the instructions on
 [`surge.sh`](https://surge.sh) to deploy your React app.
 
-## Bonus: Alpha Vantage
+> Note: Be sure to following the instructions for setting up a `202.html` file.
+> Otherwise, the app will only work if the user navigates to the homepage first.
+> Test it out by visiting a detail view and then refreshing the page.
 
-The [Alpha Vantage](https://www.alphavantage.co/documentation/) API has a lot of
-data about stocks, including time-series data. As a bonus, swap out IEX Trading
-for the Alpha Vantage API. Update your `/stocks/:symbol` view to show some of
-the additional data provided by this API.
-
-```js
-{
-  "Meta Data": {
-    "1. Information": "Intraday (1min) prices and volumes",
-    "2. Symbol": "MSFT",
-    "3. Last Refreshed": "2017-07-11 16:00:00",
-    "4. Interval": "1min",
-    "5. Output Size": "Compact",
-    "6. Time Zone": "US/Eastern"
-  },
-  "Time Series (1min)": {
-    "2017-07-11 16:00:00": {
-      "1. open": "70.0700",
-      "2. high": "70.1250",
-      "3. low": "69.9900",
-      "4. close": "69.9900",
-      "5. volume": "2311827"
-    },
-    "2017-07-11 15:59:00": {
-      "1. open": "70.0650",
-      "2. high": "70.0700",
-      "3. low": "70.0500",
-      "4. close": "70.0650",
-      "5. volume": "115405"
-    },
-    ... //and so so forth
-  }
-}
-```
