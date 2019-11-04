@@ -17,12 +17,14 @@ the following properties:
 1. `parkCode`
 1. `images`
 
-> Note: The API is using something called Pagination, which means that every request returns 50 parks, of the almost 500 total parks. You just need to get the first set of 50.
+> Note: The API is using something called Pagination, which means that every
+> request returns 50 parks, of the almost 500 total parks. You just need to get
+> the first set of 50.
 
 ## App
 
 Instead of listing the hard-coded parks from the `parks.json` file, this page
-should retrieve all stocks from the API  and display them on the page.
+should retrieve all parks from the API and display them on the page.
 
 ## Bonus: Axios
 
