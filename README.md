@@ -47,7 +47,7 @@ and pass it down to the different pages, as necessary.
 Once you have it working with the static data, get it working with the
 [National Parks API](https://www.nps.gov/subjects/developer/index.htm).
 
-You should only need to add an AJAX request that sets the API response data to
+You should only need to add an Fetch request that sets the API response data to
 state.
 
 ### Part III [Make it look like the mock](https://drive.google.com/file/d/1DJS8ysB1N9Kp89_V_loagQiFNU_4jZoN/view?usp=sharing)
