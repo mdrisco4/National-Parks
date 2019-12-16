@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+.header {
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 75px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 200px;
+}
