@@ -1,11 +1,3 @@
-/* header {
-    background-color: black;
-    color: white;
-}
-footer {
-    background-color: black;
-    color: white;
-} */
 img {
     height: 200px;
     width: 200px;
@@ -14,6 +6,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+main {
     margin-left: 30px;
 }
 .parkName {
@@ -27,16 +21,3 @@ img {
     margin-top: 150px;
     text-align: center;
 }
-
-
-
-/* .title {
-    position: relative;
-    top: 8px;
-    right: 16px;
-  } */
-/* .parkName {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px; */
-/* } */

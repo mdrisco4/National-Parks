@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Link } from "react-router-dom";
+import { Route/*, Link*/ } from "react-router-dom";
 import ParksList from "./ParksList.js"
-import ParkPage from "./ParkPage.js"
+// import ParkPage from "./ParkPage.js"
 
 
 class App extends Component {
@@ -10,9 +10,6 @@ class App extends Component {
     return (
         <div>
           <h3 className="header">National Parks List</h3>
-          <nav>
-          {/* <Link to="/ParksList">Park Names</Link> */}
-          </nav>
           <main>
           <Route path="/ParksList" component={ParksList} />
           </main>
