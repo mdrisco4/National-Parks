@@ -9,9 +9,9 @@ class ParksList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            description: '',
-            directions: '',
-            name: ''
+            description: null,
+            directions: null,
+            name: null
         };
         this.setDescription = this.setDescription.bind(this)
         this.setDirections = this.setDirections.bind(this)

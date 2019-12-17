@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 
 
 class ParkPage extends Component {
-    componentDidMount () {
-            const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
-            const parkURL = "https://developer.nps.gov/api/v1/parks"
+    componentWillMount () {
+        const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
+        const parkURL = "https://developer.nps.gov/api/v1/parks"
             const description = this.props.match.params.description
             const directions = this.props.match.params.directions
             const name = this.props.match.params.name
@@ -21,12 +21,14 @@ class ParkPage extends Component {
             let newName = res[name]
             this.props.setName(newName)
             console.log(res)
-        }
-        )
+        })
+        // .catch(err => {
+        //     console.error(err)
+        // })
     }
     render() {
         return (
-            <div>
+            <div className="park">
                 <img src="" alt="pics"/>
                 <p>{this.props.description}</p>
                 <h3>Address</h3>
