@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
 import Parks from './data/parks.json';
 import "./ParksList.css"
-import { /*Route,*/ Link } from 'react-router-dom'
-// import ParkPage from "./ParkPage.js"
+import { Route, Link } from 'react-router-dom'
+import ParkPage from "./ParkPage.js"
 
 
 class ParksList extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         description = Parks.description,
-    //         address = Parks.address,
-    //         directions = Parks.directions
-    //     }
-    
+    constructor(props) {
+        super(props);
+        this.state = {
+            description: '',
+            directions: '',
+            name: ''
+        };
+        this.setDescription = this.setDescription.bind(this)
+        this.setDirections = this.setDirections.bind(this)
+        this.setName = this.setName.bind(this)
+    }
+        setDescription(description) {
+            this.setState({ description: description });
+        }
+        setDirections(directions) {
+            this.setState({ directions: directions });
+        }
+        setName(name) {
+            this.setState({ name: name })
+    }
     render() {
         let list = Parks.map(item => {
             return (
@@ -26,14 +38,18 @@ class ParksList extends Component {
         return (
         <div className="grid-cont">
             {list}
-        {/* <Route 
+        <Route 
             path="/parkpages/:park"
             render={routerProps => (
                 <ParkPage
                 {...routerProps}
                 {...this.state}
-                /> */}
-            
+                setDescription={this.setDescription}
+                setDirections={this.setDirections}
+                setName={this.setName}
+                />
+            )}
+            />
         </div>
         )
     }
