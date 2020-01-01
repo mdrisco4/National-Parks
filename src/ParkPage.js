@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 
 class ParkPage extends Component {
-    componentWillMount () {
+    componentDidMount () {
         const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
         const parkURL = "https://developer.nps.gov/api/v1/parks"
             const description = this.props.match.params.description
@@ -22,6 +22,9 @@ class ParkPage extends Component {
             this.props.setName(newName)
             console.log(res)
         })
+       
+       
+       
         // .catch(err => {
         //     console.error(err)
         // })
