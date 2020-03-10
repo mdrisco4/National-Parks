@@ -1,5 +1,5 @@
-.park {
-	width: 100%;
+.park-page {
+	margin: 0;
 }
 
 .headerImage {
@@ -18,6 +18,8 @@
 
 .park-description {
     width: 100%;
+    color: white;
+    background-color: black;
 }
 
 .button {

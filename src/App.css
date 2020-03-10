@@ -7,9 +7,15 @@ body {
     margin: 0;
     height: 75px;
 }
-.footer {
+footer {
+    display: flex;
+    justify-content: center;
     background-color: black;
     color: white;
     margin: 0;
     height: 200px;
+}
+.park-service-logo {
+    height: 90px;
+    width: auto;
 }
