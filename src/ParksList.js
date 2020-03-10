@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Parks from './data/parks.json';
+// import Parks from './data/parks.json';
 import "./ParksList.css"
-import { Route, Link } from 'react-router-dom'
-import ParkPage from "./ParkPage.js"
+import { Link } from 'react-router-dom'
+// import ParkPage from "./ParkPage.js"
 
 const url = 'https://developer.nps.gov/api/v1/parks?fields=images&api_key=JpeRLD88Kje4QzduiQe1faC6SKfFZkpm12YsXH75'
 
@@ -40,10 +40,11 @@ class ParksList extends Component {
             </div>
             )
         });
-        return (
+        return(
         <div className="parkList">
             {list}
         </div>
+        )
     }
 }
 

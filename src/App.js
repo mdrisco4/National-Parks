@@ -54,9 +54,9 @@ class App extends Component {
                 <ParkPage
                   {...routerProps}
                   {...this.state}
-                  setDescription={this.props.match.params.description}
-                  setDirections={this.props.match.params.directions}
-                  setName={this.props.match.params.name}
+                  // setDescription={this.props.match.params.description}
+                  // setDirections={this.props.match.params.directions}
+                  // setName={this.props.match.params.name}
                 />
               )}
             />
