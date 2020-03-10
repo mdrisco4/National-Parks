@@ -27,7 +27,7 @@ class ParksList extends Component {
 				})
 			})
     }
-    }
+    
     render() {
         let list = this.state.data.map(item => {
             return (
@@ -38,35 +38,12 @@ class ParksList extends Component {
                     </div>
                 </Link>
             </div>
-
-
-
-
-
-
-                // <Link to={"/parkpage/:" + item.parkcode} className="parkName" key={item.name} style ={ { backgroundImage: `url(${item.images[0].url})` } } >
-                //     {item.parkcode}
-                //     <p className="title" >{item.name}</p>
-                // </Link>
             )
         });
         return (
-        <div className="grid-cont">
+        <div className="parkList">
             {list}
-        <Route 
-            path="/parkpages/:park"
-            render={routerProps => (
-                <ParkPage
-                {...routerProps}
-                {...this.state}
-                setDescription={this.setDescription}
-                setDirections={this.setDirections}
-                setName={this.setName}
-                />
-            )}
-            />
         </div>
-        )
     }
 }
 
