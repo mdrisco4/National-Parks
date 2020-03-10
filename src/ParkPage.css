@@ -33,9 +33,13 @@
 	text-align: center;
 }
 
+.parkImages {
+    display: flex;
+}
+
 .parkImage {
-	height: 480px;
-	width: 480px;
+	height: 200px;
+	width: 200px;
 	margin-right: 20px;
 	background-size: cover;
 }
