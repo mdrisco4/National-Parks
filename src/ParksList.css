@@ -30,12 +30,14 @@ img {
 }
 .park {
     background-size: cover;
+    text-decoration: none;
     height: 200px;
     width: 200px;
     margin: 25px 0;
 }
 .title {
     color: white;
+    text-decoration: none;
     margin-top: 150px;
     text-align: center;
 }
