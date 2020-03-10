@@ -29,7 +29,7 @@ class ParksList extends Component {
     render() {
         let list = Parks.map(item => {
             return (
-                <Link to={"/parkpage/" + item.parkcode} className="parkName" key={item.name} style ={ { backgroundImage: `url(${item.images[0].url})` } } >
+                <Link to={"/parkpage/:" + item.parkcode} className="parkName" key={item.name} style ={ { backgroundImage: `url(${item.images[0].url})` } } >
                     {item.parkcode}
                     <p className="title" >{item.name}</p>
                 </Link>

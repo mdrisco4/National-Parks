@@ -8,7 +8,8 @@ import './App.css';
 // import ParkPage from "./ParkPage.js"
 
 
-
+const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
+const parkURL = "https://developer.nps.gov/api/v1/parks"
 
 class App extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class App extends Component {
   render() {
       let list = Parks.map(item => {
           return (
-              <Link to={"/parkpage/" + item.parkcode} className="parkName" key={item.name} style ={ { backgroundImage: `url(${item.images[0].url})` } } >
+              <Link to={"/parkpage/:" + item.parkcode} className="parkName" key={item.name} style ={ { backgroundImage: `url(${item.images[0].url})` } } >
                   {item.parkcode}
                   <p className="title" >{item.name}</p>
               </Link>
@@ -47,14 +48,14 @@ class App extends Component {
             <div className="grid-cont">
               {list}
             <Route 
-              path="/parkpages/:park"
+              path="/parkpage/:parkcode"
               render={routerProps => (
                   <ParkPage
-                  {...routerProps}
+                  {...Props}
                   {...this.state}
-                  setDescription={this.setDescription}
-                  setDirections={this.setDirections}
-                  setName={this.setName}
+                  setDescription={this.props.match.params.description}
+                  setDirections={this.props.match.params.directions}
+                  setName={this.props.match.params.name}
                   />
               )}
               />
