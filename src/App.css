@@ -7,6 +7,11 @@ body {
     margin: 0;
     height: 75px;
 }
+
+main {
+    margin: 0;
+}
+
 footer {
     display: flex;
     justify-content: center;
