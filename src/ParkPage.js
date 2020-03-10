@@ -44,11 +44,11 @@ class ParkPage extends Component {
     }
     render() {
         return (
-            <div className="park">
+            <div className="park-page">
                 <div className='headerImage' style={{backgroundImage: `url(${this.state.images[0]})`}}>
 					<h1 className='parkName'>{this.state.parkName}</h1>
                     </div>
-                <p>{this.state.description}</p>
+                <p className='park-description'>{this.state.description}</p>
                 <h3 className='section-title'>Address</h3>
                 <p>{this.state.addresses.line1}</p>
                 <p>{this.state.addresses.city}, {this.state.addresses.stateCode}, {this.state.addresses.postalCode}</p>
