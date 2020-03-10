@@ -8,8 +8,8 @@ import './App.css';
 // import ParkPage from "./ParkPage.js"
 
 
-const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
-const parkURL = "https://developer.nps.gov/api/v1/parks"
+// const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
+// const parkURL = "https://developer.nps.gov/api/v1/parks"
 
 class App extends Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class App extends Component {
               path="/parkpage/:parkcode"
               render={routerProps => (
                   <ParkPage
-                  {...Props}
+                  {...routerProps}
                   {...this.state}
                   setDescription={this.props.match.params.description}
                   setDirections={this.props.match.params.directions}

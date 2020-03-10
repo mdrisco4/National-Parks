@@ -4,35 +4,50 @@ import "./ParksList.css"
 import { Route, Link } from 'react-router-dom'
 import ParkPage from "./ParkPage.js"
 
+const url = 'https://developer.nps.gov/api/v1/parks?fields=images&api_key=JpeRLD88Kje4QzduiQe1faC6SKfFZkpm12YsXH75'
 
 class ParksList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            description: null,
-            directions: null,
-            name: null
+            description: [],
+            parkcodes: [],
+            images: []
         };
-        this.setDescription = this.setDescription.bind(this)
-        this.setDirections = this.setDirections.bind(this)
-        this.setName = this.setName.bind(this)
     }
-        setDescription(description) {
-            this.setState({ description: description });
-        }
-        setDirections(directions) {
-            this.setState({ directions: directions });
-        }
-        setName(name) {
-            this.setState({ name: name })
+    componentDidMount() {
+        fetch(url)
+			.then(res => res.json())
+			.then(res => {
+				this.setState({ data: res.data })
+				this.state.data.map(code => {
+					this.setState({ parkCodes: [...this.state.parkCodes, code.parkCode] })
+                    this.setState({ images: [...this.state.images, code.images[0].url] })
+                    console.log(res.data)
+				})
+			})
+    }
     }
     render() {
-        let list = Parks.map(item => {
+        let list = this.state.data.map(item => {
             return (
-                <Link to={"/parkpage/:" + item.parkcode} className="parkName" key={item.name} style ={ { backgroundImage: `url(${item.images[0].url})` } } >
-                    {item.parkcode}
-                    <p className="title" >{item.name}</p>
+                <div key={item.parkCode}>
+                <Link to={'/parkPage/' + item.parkCode} className='parkName'>
+                    <div className='park' style={{backgroundImage: `url(${item.images[0].url})`}}>
+                        <h4 className='title'>{item.name}</h4>
+                    </div>
                 </Link>
+            </div>
+
+
+
+
+
+
+                // <Link to={"/parkpage/:" + item.parkcode} className="parkName" key={item.name} style ={ { backgroundImage: `url(${item.images[0].url})` } } >
+                //     {item.parkcode}
+                //     <p className="title" >{item.name}</p>
+                // </Link>
             )
         });
         return (
