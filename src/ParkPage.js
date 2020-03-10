@@ -45,10 +45,13 @@ class ParkPage extends Component {
     render() {
         return (
             <div className="park">
-                <img src="" alt="pics" />
+                <div className='headerImage' style={{backgroundImage: `url(${this.state.images[0]})`}}>
+					<h1 className='parkName'>{this.state.parkName}</h1>
+                    </div>
                 <p>{this.state.description}</p>
                 <h3>Address</h3>
-                <p>{this.state.address}</p>
+                <p>{this.state.addresses.line1}</p>
+                <p>{this.state.addresses.city}, {this.state.addresses.stateCode}, {this.state.addresses.postalCode}</p>
                 <h3>Directions</h3>
                 <p>{this.state.directions}</p>
             </div>
