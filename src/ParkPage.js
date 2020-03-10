@@ -9,7 +9,7 @@ class ParkPage extends Component {
         const parkURL = "https://developer.nps.gov/api/v1/parks"
             // const description = this.props.match.params.description
             // const directions = this.props.match.params.directions
-            const name = this.props.match.params.name
+            // const name = this.props.match.params.name
             
         fetch(parkURL + "?api_key=" + apiKey)
         .then(res => res.json())
@@ -18,8 +18,8 @@ class ParkPage extends Component {
             // this.props.setDescription(newDescription)
             // let newDirections = res[directions]
             // this.props.setDirections(newDirections)
-            let newName = res[name]
-            this.props.setName(newName)
+            // let newName = res[name]
+            // this.props.setName(newName)
             console.log(res)
         })
        
