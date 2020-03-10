@@ -9,8 +9,8 @@ class ParksList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      description: [],
-      parkcodes: [],
+      data: [],
+      parkCodes: [],
       images: []
     };
   }
@@ -30,7 +30,7 @@ class ParksList extends Component {
   }
 
   render() {
-    let list = this.state.description.map(item => {
+    let list = this.state.data.map(item => {
       return (
         <div key={item.parkCode}>
           <Link to={"/parkPage/" + item.parkCode} className="parkName">

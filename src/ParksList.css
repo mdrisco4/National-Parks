@@ -2,7 +2,7 @@ img {
     height: 200px;
     width: 200px;
 }
-.grid-cont {
+.parkList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -11,6 +11,12 @@ main {
     margin-left: 30px;
 }
 .parkName {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin: 25px 0;
+}
+.park {
     background-size: cover;
     height: 200px;
     width: 200px;

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import "./ParksList.css";
 import { Route, Link } from "react-router-dom";
 import ParkPage from "./ParkPage.js";
 import "./App.css";
