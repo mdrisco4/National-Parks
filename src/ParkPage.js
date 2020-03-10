@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
-// import Parks from './data/parks.json';
+import "./ParkPage.css";
+import { Link } from 'react-router-dom';
 
 
 
 class ParkPage extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            data: [],
+			images: [],
+			parkName: null,
+			description: null,
+			addresses: [],
+			directions: null
+        }
+    }
     componentDidMount () {
-        const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
-        const parkURL = "https://developer.nps.gov/api/v1/parks"
-            // const description = this.props.match.params.description
-            // const directions = this.props.match.params.directions
-            // const name = this.props.match.params.name
+        // const apiKey = "VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv"
+        let parkCode = this.props.match.params.parkCode
+	    let parkURL = 'https://developer.nps.gov/api/v1/parks?parkCode=' + parkCode + '&fields=addresses,images&api_key=VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv'
+
             
-        fetch(parkURL + "?api_key=" + apiKey)
+        fetch(parkURL)
         .then(res => res.json())
         .then(res => {
-            // let newDescription = res[description]
-            // this.props.setDescription(newDescription)
-            // let newDirections = res[directions]
-            // this.props.setDirections(newDirections)
-            // let newName = res[name]
-            // this.props.setName(newName)
+            this.setState({ data: res.data })
+	      	this.setState({ parkName: res.data[0].name })
+	      	this.setState({ description: res.data[0].description })
+	      	this.setState({ directions: res.data[0].directionsInfo })
             console.log(res)
         })
        
