@@ -1,47 +1,85 @@
 .park-page {
-	margin: 0;
+  margin: 0;
 }
 
 .headerImage {
-	width: 100%;
-	height: auto;
-	margin: 0;
-	display: flex;
-	align-items: flex-end;
-	color: white;
-	background-size: cover;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  background-size: cover;
 }
 
 .parkName {
-    color: white;
+  color: white;
 }
 
 .park-description {
-    width: 100%;
-    color: white;
-    height: 100px;
-    margin: 0;
-    background-color: black;
+  width: 80%;
+  color: white;
+  height: 100px;
+  margin: 0;
+  padding: 0 10%;
+  background-color: black;
+}
+
+.section-title {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.address {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.directions {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .button {
-	width: 160px;
-	height: 45px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: black;
-	color: white;
-	text-align: center;
+  width: 160px;
+  height: 45px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .parkImages {
-    display: flex;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: left;
+}
+
+@media screen and (min-width: 830px) {
+  .parkImage {
+  }
 }
 
 .parkImage {
-	height: 200px;
-	width: 200px;
-	margin-right: 20px;
-	background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  background-size: cover;
+}
+
+@media screen and (min-width: 830px) {
+  .parkImage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.home-link {
+  margin-left: 10%;
+  margin-right: 10%;
 }

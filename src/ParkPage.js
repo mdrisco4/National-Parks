@@ -50,10 +50,10 @@ class ParkPage extends Component {
                     </div>
                 <p className='park-description'>{this.state.description}</p>
                 <h3 className='section-title'>Address</h3>
-                <p>{this.state.addresses.line1}</p>
-                <p>{this.state.addresses.city}, {this.state.addresses.stateCode}, {this.state.addresses.postalCode}</p>
+                <p className='address'>{this.state.addresses.line1}</p>
+                <p className='address'>{this.state.addresses.city}, {this.state.addresses.stateCode}, {this.state.addresses.postalCode}</p>
                 <h3 className='section-title'>Directions</h3>
-                <p>{this.state.directions}</p>
+                <p className='directions'>{this.state.directions}</p>
 
                 <div className='button'>
 						<h4>Read More</h4>
@@ -69,7 +69,7 @@ class ParkPage extends Component {
 					</div>
 
                     <Link className='home-link' to='/'>
-						<h3>Home Page</h3>
+						<h3 className='home-link'>Home Page</h3>
 					</Link>
             </div>
         );
