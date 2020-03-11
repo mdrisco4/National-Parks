@@ -15,6 +15,7 @@
 .parkName {
   color: white;
   padding-left: 10%;
+  font-size: 45px;
 }
 
 .park-description {
@@ -22,6 +23,7 @@
   color: white;
   height: auto;
   margin: 0;
+  font-size: 25px;
   padding: 40px 10%;
   background-color: black;
 }
@@ -29,15 +31,18 @@
 .section-title {
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 35px;
 }
 
 .address {
   margin: 0 10%;
+  font-size: 25px;
 }
 
 .directions {
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 25px;
 }
 
 .site-link {
@@ -69,7 +74,7 @@
   justify-content: left;
   width: 80%;
   height: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @media screen and (min-width: 830px) {
