@@ -19,10 +19,9 @@
 .park-description {
   width: 80%;
   color: white;
-  height: 100px;
+  height: auto;
   margin: 0;
-  padding: 0 10%;
-  padding-top: 40px;
+  padding: 40px 10%;
   background-color: black;
 }
 
@@ -56,13 +55,17 @@
 
 .parkImages {
   display: flex;
+  flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 15px;
+  margin-bottom: 15px;
   justify-content: left;
 }
 
 @media screen and (min-width: 830px) {
-  .parkImage {
+  .parkImages {
+      flex-direction: row;
   }
 }
 
