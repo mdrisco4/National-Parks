@@ -13,7 +13,8 @@ class ParkPage extends Component {
             parkName: null,
             description: null,
             addresses: [],
-            directions: null
+            directions: null,
+            siteURL: null
         }
     }
     componentDidMount() {
@@ -29,6 +30,7 @@ class ParkPage extends Component {
                 this.setState({ parkName: res.data[0].name })
                 this.setState({ description: res.data[0].description })
                 this.setState({ directions: res.data[0].directionsInfo })
+                this.setState({ siteURL: res.data[0].url })
                 this.state.data[0].images.map(image => {
                     this.setState({ images: [...this.state.images, image.url] })
                 })
@@ -56,7 +58,7 @@ class ParkPage extends Component {
                 <p className='directions'>{this.state.directions}</p>
 
                 <div className='button'>
-						<h4>Read More</h4>
+                    <a href={`url(${this.state.siteURL})`} className='site-link'>Read More</a>
 					</div>
 
                 <h3 className='section-title'>Images</h3>

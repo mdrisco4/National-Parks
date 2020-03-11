@@ -32,13 +32,18 @@
 }
 
 .address {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0 10%;
 }
 
 .directions {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.site-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .button {
