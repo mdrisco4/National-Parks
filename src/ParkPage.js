@@ -69,7 +69,9 @@ class ParkPage extends Component {
 					</div>
 
                     <Link className='home-link' to='/'>
-						<h3 className='home-link'>Home Page</h3>
+                    <div className='button'>
+						<h4 className='home-link'>Home Page</h4>
+                        </div>
 					</Link>
             </div>
         );
