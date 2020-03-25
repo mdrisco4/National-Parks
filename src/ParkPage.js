@@ -48,7 +48,7 @@ class ParkPage extends Component {
         return (
             <div className="park-page">
                 <div className='headerImage' style={{backgroundImage: `url(${this.state.images[0]})`}}>
-					<h1 className='parkName'>{this.state.parkName}</h1>
+					<h1 className='park-page-park-name'>{this.state.parkName}</h1>
                     </div>
                 <p className='park-description'>{this.state.description}</p>
                 <h3 className='section-title'>Address</h3>

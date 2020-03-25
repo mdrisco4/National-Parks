@@ -12,10 +12,12 @@
   background-size: cover;
 }
 
-.parkName {
+.park-page-park-name {
   color: white;
+  text-shadow: 1px 1px black;
   padding-left: 10%;
   font-size: 45px;
+  height: 250px;
 }
 
 .park-description {
