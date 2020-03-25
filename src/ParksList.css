@@ -8,7 +8,8 @@ img {
     margin-right: auto;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: auto;
 }
 
 @media screen and (min-width: 1000px) {
