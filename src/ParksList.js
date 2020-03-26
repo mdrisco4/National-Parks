@@ -25,6 +25,7 @@ class ParksList extends Component {
           });
           this.setState({ images: [...this.state.images, code.images[0].url] });
         });
+        console.log(res.data);
       });
   }
 
