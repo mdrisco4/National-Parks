@@ -43,7 +43,6 @@
   background-size: cover;
   height: 180px;
   width: 180px;
-  margin: 25px 0;
 }
 
 @media screen and (min-width: 500px) {
@@ -57,16 +56,19 @@
   color: white;
   font-size: 18px;
   padding-top: 114px;
-  margin-top: 100px;
   text-align: center;
 }
 
 @media screen and (min-width: 500px) {
   .title {
-    color: white;
     font-size: 25px;
     padding-top: 160px;
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 72px;
   }
 }
+
+@media screen and (min-width: 900px) {
+    .title {
+      margin-top: 100px;
+    }
+  }
