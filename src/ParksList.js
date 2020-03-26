@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from "react";
+import React, { Component } from "react";
 import "./ParksList.css";
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,6 @@ class ParksList extends Component {
           });
           this.setState({ images: [...this.state.images, code.images[0].url] });
         });
-        console.log(res.data);
       });
   }
 
@@ -34,14 +33,12 @@ class ParksList extends Component {
       return (
         <div key={item.parkCode}>
           <Link to={"/parkPage/" + item.parkCode} className="parkName">
-            {/* <Suspense fallback={<Spinner />}> */}
             <div
               className="park"
               style={{ backgroundImage: `url(${item.images[0].url})` }}
               >
               <h4 className="title">{item.name}</h4>
             </div>
-              {/* </Suspense> */}
           </Link>
         </div>
       );

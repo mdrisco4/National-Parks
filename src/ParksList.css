@@ -1,50 +1,72 @@
-img {
-    height: 200px;
-    width: 200px;
-}
 .parkList {
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: auto;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
-    .parkList {
-        grid-template-columns: 1fr 1fr 1fr;
+  .parkList {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .parkList {
-        grid-template-columns: 25% 25% 25% 25%;
+  .parkList {
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     max-width: 1200px;
-    }
+  }
 }
 
 .parkName {
-    text-shadow: 1px 1px black;
-    background-size: cover;
-    text-decoration: none;
+  text-shadow: 1px 1px black;
+  background-size: cover;
+  text-decoration: none;
+  height: 180px;
+  width: 180px;
+  margin: 25px 0;
+}
+
+@media screen and (min-width: 500px) {
+  .parkName {
     height: 250px;
     width: 250px;
-    margin: 25px 0;
+  }
 }
+
 .park {
-    background-size: cover;
+  background-size: cover;
+  height: 180px;
+  width: 180px;
+  margin: 25px 0;
+}
+
+@media screen and (min-width: 500px) {
+  .park {
     height: 250px;
     width: 250px;
-    margin: 25px 0;
+  }
 }
+
 .title {
+  color: white;
+  font-size: 18px;
+  padding-top: 114px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
     color: white;
     font-size: 25px;
     padding-top: 160px;
     margin-top: 100px;
     text-align: center;
+  }
 }
