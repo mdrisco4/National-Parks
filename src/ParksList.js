@@ -3,7 +3,7 @@ import "./ParksList.css";
 import { Link } from "react-router-dom";
 
 const url =
-  "https://developer.nps.gov/api/v1/parks?limit=25&start=2&fields=images&api_key=VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv";
+  "https://developer.nps.gov/api/v1/parks?limit=466&start=2&fields=images&api_key=VmbEdcKlJcXq26ymElH8scgVWbRSSvvsiEXkt6Qv";
 
 class ParksList extends Component {
   constructor(props) {
@@ -30,6 +30,7 @@ class ParksList extends Component {
   }
 
   render() {
+    
     let list = this.state.data.map(item => {
       return (
         <div key={item.parkCode}>
