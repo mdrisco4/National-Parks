@@ -59,7 +59,7 @@ class ParkPage extends Component {
 
                 <div className='button'>
                     {/* <a href={`url(${this.state.siteURL})`} className='site-link'>Read More</a> */}
-                    <a href={`${this.state.siteURL}`} className='site-link'>Read More</a>
+                    <a href={`${this.state.siteURL}`} className='site-link' target="_blank">Read More</a>
 					</div>
 
                 <h3 className='section-title'>Images</h3>
